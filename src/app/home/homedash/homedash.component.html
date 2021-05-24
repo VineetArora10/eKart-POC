@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img [src]="logo" height="60px" width="60px">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sidebox">
+            <div class="sidebar">
+                <ul>
+                    <li><button class="btn sidebtn">Profile</button></li>
+                    <li><button class="btn sidebtn">Home</button></li>
+                    <li><button class="btn sidebtn" (click)="gotoproducts()">Products</button></li>
+                    <li><button class="btn sidebtn">About Us</button></li>
+                    <li><button class="btn sidebtn">Contact Us</button></li>
+                    <li><button class="btn sidebtn" (click)="gotologout()">Logout</button></li>
+                </ul>
+              </div>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide mycarousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active homecarousel">
+                <img [src]="carousel1" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Shop Macbook at best prices!!</h5>
+                </div>
+              </div>
+              <div class="carousel-item homecarousel">
+                <img [src]="carousel2" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Upgrade yourself with Iphone 12!!</h5>
+                </div>
+              </div>
+              <div class="carousel-item homecarousel">
+                <img [src]="carousel3" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Beautify your Home with Designer Furniture!!</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <footer class="flex-center">
+        <p>Copyright &copy; eKart.com</p>
+    </footer>
+</body>
+</html>

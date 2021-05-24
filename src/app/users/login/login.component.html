@@ -1,0 +1,30 @@
+<nav>
+    <div class="logo">
+      <img [src]="logo" height="60px" width="60px">
+    </div>
+</nav>
+
+<div class="container flex-center">
+    <div class="imgg">
+        <img [src]="loginimg">
+    </div>
+    <div class="box">
+    <h3>Login</h3>
+    <form [formGroup]="loginform" (ngSubmit)="login()">
+        <div class="form-group">
+            <input type="email" id="email" formControlName="email" class="form-control" placeholder="Enter your Email Id">
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" formControlName="password" class="form-control" placeholder="Enter your Password">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-dark">Login</button>
+        </div>
+    </form>
+        <button type="submit" class="btn btn-primary reg" (click)="gotoregister()">New to eKart</button>
+    </div>
+</div>
+
+<footer class="flex-center">
+    <p>Copyright &copy; eKart.com</p>
+</footer>

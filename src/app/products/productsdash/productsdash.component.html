@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img [src]="logo" height="60px" width="60px">
+        </div>
+        <div class="search flex-center">
+            <input type="search" placeholder="Search for products, brands and more" [(ngModel)] = "searchproduct">
+            <button type="submit" class="btn btn-success searchbtn" (click) = "search()">Search</button>
+        </div>
+        <div class="cart flex-center">
+          <img (click)="gotocart()" [src]="cart" height="30px" width="30px">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sidebox">
+            <div class="sidebar">
+                <ul>
+                  <li><button class="btn sidebtn">Profile</button></li>
+                  <li><button class="btn sidebtn" (click)="gotohome()">Home</button></li>
+                  <li><button class="btn sidebtn">Products</button></li>
+                  <li><button class="btn sidebtn">About Us</button></li>
+                  <li><button class="btn sidebtn">Contact Us</button></li>
+                  <li><button class="btn sidebtn" (click)="gotologout()">Logout</button></li>
+                </ul>
+              </div>
+        </div>
+
+
+        <div class="box">
+          <div class="bootcard">
+            <div class="row row-cols-1 row-cols-sm-6 g-4">
+              <div class="col">
+                <div class="card flex-center">
+                  <img [src]="card1" class="card-img-top">
+                  <div class="card-body">
+                    <button class="btn" (click)="all()">All Products</button>
+                  </div>
+                </div>
+            </div>
+              <div class="col">
+                  <div class="card flex-center">
+                    <img [src]="card2" class="card-img-top">
+                    <div class="card-body">
+                      <button class="btn" (click)="mobiles()">Mobiles</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card flex-center">
+                    <img [src]="card3" class="card-img-top">
+                    <div class="card-body">
+                      <button class="btn" (click)="fashion()">Fashion</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card flex-center">
+                    <img [src]="card4" class="card-img-top">
+                    <div class="card-body">
+                      <button class="btn" (click)="electronics()">Electronics</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card flex-center">
+                    <img [src]="card5" class="card-img-top">
+                    <div class="card-body">
+                      <button class="btn" (click)="home()">Home</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card flex-center">
+                    <img [src]="card6" class="card-img-top">
+                    <div class="card-body">
+                      <button class="btn" (click)="appliances()">Appliances</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sortbox">
+          <div class="sortcontent">
+            <form>
+              <mat-form-field appearance="fill">
+              <mat-label>{{SortName}}</mat-label>
+              <mat-select [(ngModel)]="selectedValue" name="sort">
+              <mat-option (click)="none()">
+                None
+                </mat-option>
+               <mat-option (click)="lowtohigh()">
+                Price -- Low to High
+               </mat-option>
+               <mat-option (click)="hightolow()">
+                 Price -- High to Low
+                </mat-option>
+              </mat-select>
+              </mat-form-field>
+        </form>
+          </div>
+        </div>
+
+        <div class="productcards">
+          <div *ngFor="let item of productslist, let i = index">
+            <mat-card class="example-card">
+              <mat-card-header>
+                <mat-card-title>{{item.productname}}</mat-card-title>
+              </mat-card-header>
+              <hr>
+              <br>
+              <div class="flex-center">
+              <img mat-card-image src="{{item.image}}" class="img">
+              </div>
+              <h5>₹{{item.price}}</h5>
+              <mat-card-content>
+                <p>{{item.description}}</p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-raised-button (click)="addtocart(item.id,item)">Add to Cart</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+        </div>
+    </div>
+
+    <footer class="flex-center">
+        <p>Copyright &copy; eKart.com</p>
+    </footer>
+</body>
+</html>

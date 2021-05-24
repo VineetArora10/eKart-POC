@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img [src]="logo" height="60px" width="60px">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sidebox">
+            <div class="sidebar">
+                <ul>
+                    <li><button class="btn sidebtn">Profile</button></li>
+                    <li><button class="btn sidebtn" (click)="gotohome()">Home</button></li>
+                    <li><button class="btn sidebtn" (click)="gotoproducts()">Products</button></li>
+                    <li><button class="btn sidebtn">About Us</button></li>
+                    <li><button class="btn sidebtn">Contact Us</button></li>
+                    <li><button class="btn sidebtn" (click)="gotologout()">Logout</button></li>
+                </ul>
+              </div>
+        </div>
+
+
+        <div  class="maincart">
+          <h1>Your Shopping Cart</h1>
+            <div id="shoppingcart">
+              <div *ngFor="let item of usercart, let i=index">
+                <div class="item">
+                    <img src="{{item.image}}" height="120px" width="100px">
+                    <h3>{{item.productname}}</h3>
+                    <h4>₹{{item.price}}</h4>
+                    <h4>{{item.description}}</h4>
+                    <h4>{{item.quantity}}</h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+         <button class="btn btn-dark btn-lg">Proceed to pay</button>
+          </div>
+    </div>
+
+    <!-- <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Product Image</th>
+          <th scope="col">Product Name</th>
+          <th scope="col">Product Price</th>
+          <th scope="col">Product Quantity</th>
+          <th scope="col">Product Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><img src="{{item.image}}" height="120px" width="100px"></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>{{item.name}}</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td >{{item.price}}</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td >{{item.quantity}}</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>{{item.description}}</td>
+        </tr>
+      </tbody>
+    </table> -->
+
+    <footer class="flex-center">
+        <p>Copyright &copy; eKart.com</p>
+    </footer>
+</body>
+</html>

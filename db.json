@@ -1,0 +1,678 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "mobile": 111,
+      "name": "Vineet Arora",
+      "address": "Gurgaon",
+      "email": "vineetarora010@gmail.com",
+      "password": "vineet",
+      "cart": [
+        {
+          "id": 7,
+          "productname": "Nike Air Zoom Vomero 15",
+          "brand": "Nike",
+          "price": 10121,
+          "description": "Color : Black, Outer Material : Mesh, Model Name : Air Zoom Vomero 15, Ideal For : Men, Occasion : Sports, Closure : Lace-Ups",
+          "image": "assets/images/nikeshoes2.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 9,
+          "productname": "Puma Pacer Balance IDP",
+          "brand": "Puma",
+          "price": 1594,
+          "description": "Color : Blue, Outer Material : Mesh, Model Name : Pacer Balance IDP, Ideal For : Men, Occasion : Sports, Sole Material : Rubber, Closure : Lace-Ups",
+          "image": "assets/images/pumashoes2.jpeg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "mobile": 222222,
+      "name": "Sagar Chauhan",
+      "address": "Noida",
+      "email": "sagarcx3600@gmail.com",
+      "password": "sagar",
+      "cart": [
+        {
+          "id": 12,
+          "productname": "Nike Sweatshirt",
+          "brand": "Nike",
+          "price": 2471,
+          "description": "Color : Blue, Fabric : Polyster, Neck : Hooded , Ideal For : Men, Sleeve : Full Sleeve",
+          "image": "assets/images/nikesweat2.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 14,
+          "productname": "Adidas Sweatshirt",
+          "brand": "Adidas",
+          "price": 2469,
+          "description": "Color : Black, Fabric : Cotton Blend, Neck : Hooded , Ideal For : Men, Sleeve : Full Sleeve",
+          "image": "assets/images/adidassweat.jpeg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "mobile": 333333,
+      "name": "Shubham Sharma",
+      "address": "Ghaziabad",
+      "email": "shubham.eng999@gmail.com",
+      "password": "shubham",
+      "cart": [
+        {
+          "id": 21,
+          "productname": "Apple Ipad Pro",
+          "brand": "Apple",
+          "price": 71900,
+          "description": "APPLE iPad Pro 2021 (3rd Generation) 8 GB RAM 128 GB ROM 11 inches with Wi-Fi Only (Space Grey)",
+          "image": "assets/images/ipad.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 22,
+          "productname": "Apple Watch Series 4",
+          "brand": "Apple",
+          "price": 52900,
+          "description": "APPLE Watch Series 4 GPS + Cellular 44 mm Space Grey Aluminium Case with Black Sport Band  (Black Strap, Regular)",
+          "image": "assets/images/iwatch.jpeg",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "products": {
+    "allproducts": [
+      {
+        "id": 1,
+        "productname": "Apple Iphone12",
+        "brand": "Apple",
+        "price": 77000,
+        "description": "64 GB ROM, 15.49 cm (6.1 inch) Super Retina XDR Display, 12MP + 12MP | 12MP Front Camera, A14 Bionic Chip with Next Generation Neural Engine Processor, Ceramic Shield, IP68 Water Resistance",
+        "image": "assets/images/iphone12.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 2,
+        "productname": "Samsung Galaxy M42",
+        "brand": "Samsung",
+        "price": 22000,
+        "description": "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB, 16.76 cm (6.6 inch) HD+ Display, 48MP Rear Camera, 5000 mAh Battery, Qualcomm Snapdragon 750G octa core Processor",
+        "image": "assets/images/samsung_galaxy_m42.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 3,
+        "productname": "Samsung Galaxy S21 Ultra",
+        "brand": "Samsung",
+        "price": 105999,
+        "description": "12 GB RAM | 256 GB ROM, 17.27 cm (6.8 inch) Quad HD+ Display, 108MP + 12MP + 10MP + 10MP | 40MP Front Camera, Exynos 2100 Processor",
+        "image": "assets/images/samsung_galaxy_s21.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 4,
+        "productname": "Oppo F17 Pro",
+        "brand": "Oppo",
+        "price": 19990,
+        "description": "8 GB RAM | 128 GB ROM | Expandable Upto 256 GB, 16.33 cm (6.43 inch) Full HD+ Display, 48MP + 8MP + 2MP + 2MP | 16MP + 2MP Dual Front Camera, 4015 mAh Lithium-ion Battery, MediaTek Helio P95 Processor",
+        "image": "assets/images/oppo_f17_pro.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 5,
+        "productname": "Realme 8",
+        "brand": "Realme",
+        "price": 16999,
+        "description": "8 GB RAM | 128 GB ROM | Expandable Upto 1 TB, 16.51 cm (6.5 inch) Full HD+ Display, 48MP + 2MP + 2MP | 16M Front Camera, 5000 mAh Battery, MediaTek Dimensity 700 (MT6833) Processor",
+        "image": "assets/images/realme_8.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 6,
+        "productname": "Nike Renew Elevate",
+        "brand": "Nike",
+        "price": 4496,
+        "description": "Color : White, Outer Material : Textile, Model Name : Renew Elevate, Ideal For : Men, Occasion : Sports, Closure : Lace-Ups",
+        "image": "assets/images/nikeshoes1.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 7,
+        "productname": "Nike Air Zoom Vomero 15",
+        "brand": "Nike",
+        "price": 10121,
+        "description": "Color : Black, Outer Material : Mesh, Model Name : Air Zoom Vomero 15, Ideal For : Men, Occasion : Sports, Closure : Lace-Ups",
+        "image": "assets/images/nikeshoes2.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 8,
+        "productname": "Puma Zod Runner V3 IDP",
+        "brand": "Puma",
+        "price": 1499,
+        "description": "Color : White, Outer Material : Mesh, Model Name : Zod Runner V3 IDP, Ideal For : Men, Occasion : Sports, Sole Material : Rubber, Closure : Lace-Ups",
+        "image": "assets/images/pumashoes1.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 9,
+        "productname": "Puma Pacer Balance IDP",
+        "brand": "Puma",
+        "price": 1594,
+        "description": "Color : Blue, Outer Material : Mesh, Model Name : Pacer Balance IDP, Ideal For : Men, Occasion : Sports, Sole Material : Rubber, Closure : Lace-Ups",
+        "image": "assets/images/pumashoes2.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 10,
+        "productname": "Adidas Elate M",
+        "brand": "Adidas",
+        "price": 1105,
+        "description": "Color : Blue, Outer Material : Synthetic, Model Name : Elate M, Ideal For : Men, Occasion : Sports, Sole Material : Rubber, Closure : Lace-Ups",
+        "image": "assets/images/adidasshoes.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 11,
+        "productname": "Nike Sweatshirt",
+        "brand": "Nike",
+        "price": 2471,
+        "description": "Color : White & Dark Blue, Fabric : Polyster, Neck : Hooded , Ideal For : Men, Sleeve : Full Sleeve",
+        "image": "assets/images/nikesweat1.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 12,
+        "productname": "Nike Sweatshirt",
+        "brand": "Nike",
+        "price": 2471,
+        "description": "Color : Blue, Fabric : Polyster, Neck : Hooded , Ideal For : Men, Sleeve : Full Sleeve",
+        "image": "assets/images/nikesweat2.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 13,
+        "productname": "Jack and Jones Jacket",
+        "brand": "Jack and Jones",
+        "price": 1924,
+        "description": "Color : Green, Fabric : Cotton Blend, Neck : Bomber , Ideal For : Men, Sleeve : Full Sleeve",
+        "image": "assets/images/jjjacket.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 14,
+        "productname": "Adidas Sweatshirt",
+        "brand": "Adidas",
+        "price": 2469,
+        "description": "Color : Black, Fabric : Cotton Blend, Neck : Hooded , Ideal For : Men, Sleeve : Full Sleeve",
+        "image": "assets/images/adidassweat.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 15,
+        "productname": "Adidas Sweatshirt",
+        "brand": "Adidas",
+        "price": 3919,
+        "description": "Color : Black, Fabric : Polyster Blend, Neck : Hooded , Ideal For : Men, Sleeve : Full Sleeve",
+        "image": "assets/images/adidassweat.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 16,
+        "productname": "Apple Macbook Air M1",
+        "brand": "Apple",
+        "price": 92900,
+        "description": "Apple M1 Processor, 8GB DDR4 RAM, Mac OS Operating System, 256GB SSD, 33.78cm (13.3 inch) Display, 1 Year Limited Warranty",
+        "image": "assets/images/macbook1.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 17,
+        "productname": "Apple Macbook Pro M1",
+        "brand": "Apple",
+        "price": 118900,
+        "description": "Apple M1 Processor, 8GB DDR4 RAM, Mac OS Operating System, 256GB SSD, 33.78cm (13.3 inch) Display, 1 Year Limited Warranty",
+        "image": "assets/images/macbook2.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 18,
+        "productname": "Asus ROG Strix",
+        "brand": "Asus",
+        "price": 69990,
+        "description": "NVIDIA GeForce GTX 1650 Ti, Intel Core i5 (10th Gen), 8GB DDR4 RAM, 512GB SSD, 39.62cm (15.5 inch) Display, 1 Year Onsite Warranty",
+        "image": "assets/images/asusrog.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 19,
+        "productname": "Acer Predator Helios 300",
+        "brand": "Acer",
+        "price": 92990,
+        "description": "Intel Core i5 (10th Gen), 16GB DDR4 RAM, 1TB HDD | 256GB SSD, 39.62cm (15.5 inch) Display, 1 Year International Travellers Warranty",
+        "image": "assets/images/acerpred.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 20,
+        "productname": "Lenovo Ideapad",
+        "brand": "Lenovo",
+        "price": 42990,
+        "description": "Lenovo Ideapad S145 Core i5 10th Gen - (8 GB/1 TB HDD/Windows 10 Home) S145-15IIL Laptop  (15.6 inch, Platinum Grey, 1.85 kg)",
+        "image": "assets/images/lenovo.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 21,
+        "productname": "Apple Ipad Pro",
+        "brand": "Apple",
+        "price": 71900,
+        "description": "APPLE iPad Pro 2021 (3rd Generation) 8 GB RAM 128 GB ROM 11 inches with Wi-Fi Only (Space Grey)",
+        "image": "assets/images/ipad.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 22,
+        "productname": "Apple Watch Series 4",
+        "brand": "Apple",
+        "price": 52900,
+        "description": "APPLE Watch Series 4 GPS + Cellular 44 mm Space Grey Aluminium Case with Black Sport Band  (Black Strap, Regular)",
+        "image": "assets/images/iwatch.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 23,
+        "productname": "Samsung Galaxy Buds Pro",
+        "brand": "Samsung",
+        "price": 15990,
+        "description": "SAMSUNG Galaxy Buds Pro Active Noise Cancellation Enabled Bluetooth Headset (Violet, True Wireless)",
+        "image": "assets/images/samsungbuds.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 24,
+        "productname": "Ikea TV Unit",
+        "brand": "Ikea",
+        "price": 12489,
+        "description": "Desc",
+        "image": "assets/images/home1.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 25,
+        "productname": "Ikea Sofa Set",
+        "brand": "Ikea",
+        "price": 39999,
+        "description": "Desc",
+        "image": "assets/images/home2.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 26,
+        "productname": "Bombay Dyeing Bedsheet",
+        "brand": "Bombay Dyeing",
+        "price": 2519,
+        "description": "Size : Double King, Threadcount : 160TC, Pattern : Floral, Fabric : Cotton",
+        "image": "assets/images/home3.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 27,
+        "productname": "Bombay Dyeing Bedsheet",
+        "brand": "Bombay Dyeing",
+        "price": 3911,
+        "description": "Size : Double King, Threadcount : 160TC, Pattern : Floral, Fabric : Cotton, Color : Dark Brown",
+        "image": "assets/images/home4.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 28,
+        "productname": "Wall Clock",
+        "brand": "ekart",
+        "price": 339,
+        "description": "Lord Ganesh Design Wall Clock",
+        "image": "assets/images/home5.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 29,
+        "productname": "Samsung Crystal 4K",
+        "brand": "Samsung",
+        "price": 39999,
+        "description": "Size : 108cm (43 inch), Operating System: Tizen, Resolution: Ultra HD (4K) 3840 x 2160 Pixels, Sound Output: 20 W, Refresh Rate: 60 Hz",
+        "image": "assets/images/appliances1.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 30,
+        "productname": "Motorola TV",
+        "brand": "Motorola",
+        "price": 17999,
+        "description": "Size : 80cm (32 inch), Operating System: Android, Resolution: HD Ready 1366 x 768 Pixels, Sound Output: 40 W, Refresh Rate: 60 Hz",
+        "image": "assets/images/appliances2.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 31,
+        "productname": "Samsung Fully Washing Machine",
+        "brand": "Samsung",
+        "price": 14690,
+        "description": "Fully Automatic Top Load Washing Machines provide great wash quality 680 rpm : Higher the spin speed, lower the drying time, 6.5 kg",
+        "image": "assets/images/appliances3.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 32,
+        "productname": "LG Fully Washing Machine",
+        "brand": "LG",
+        "price": 16490,
+        "description": "LG 5 Star Invertor Fully Automatic Top Load Washing Machine, 780 rpm : Higher the spin speed, lower the drying time, 5 Star Rating, 6.5 kg",
+        "image": "assets/images/appliances4.jpeg",
+        "quantity": 0
+      }
+    ],
+    "mobiles": [
+      {
+        "id": 1,
+        "productname": "Apple Iphone12",
+        "brand": "Apple",
+        "price": 77000,
+        "description": "64 GB ROM, 15.49 cm (6.1 inch) Super Retina XDR Display, 12MP + 12MP | 12MP Front Camera, A14 Bionic Chip with Next Generation Neural Engine Processor, Ceramic Shield, IP68 Water Resistance",
+        "image": "assets/images/iphone12.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 2,
+        "productname": "Samsung Galaxy M42",
+        "brand": "Samsung",
+        "price": 22000,
+        "description": "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB, 16.76 cm (6.6 inch) HD+ Display, 48MP Rear Camera, 5000 mAh Battery, Qualcomm Snapdragon 750G octa core Processor",
+        "image": "assets/images/samsung_galaxy_m42.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 3,
+        "productname": "Samsung Galaxy S21 Ultra",
+        "brand": "Samsung",
+        "price": 105999,
+        "description": "12 GB RAM | 256 GB ROM, 17.27 cm (6.8 inch) Quad HD+ Display, 108MP + 12MP + 10MP + 10MP | 40MP Front Camera, Exynos 2100 Processor",
+        "image": "assets/images/samsung_galaxy_s21.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 4,
+        "productname": "Oppo F17 Pro",
+        "brand": "Oppo",
+        "price": 19990,
+        "description": "8 GB RAM | 128 GB ROM | Expandable Upto 256 GB, 16.33 cm (6.43 inch) Full HD+ Display, 48MP + 8MP + 2MP + 2MP | 16MP + 2MP Dual Front Camera, 4015 mAh Lithium-ion Battery, MediaTek Helio P95 Processor",
+        "image": "assets/images/oppo_f17_pro.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 5,
+        "productname": "Realme 8",
+        "brand": "Realme",
+        "price": 16999,
+        "description": "8 GB RAM | 128 GB ROM | Expandable Upto 1 TB, 16.51 cm (6.5 inch) Full HD+ Display, 48MP + 2MP + 2MP | 16M Front Camera, 5000 mAh Battery, MediaTek Dimensity 700 (MT6833) Processor",
+        "image": "assets/images/realme_8.jpeg",
+        "quantity": 0
+      }
+    ],
+    "fashion": [
+      {
+        "id": 6,
+        "productname": "Nike Renew Elevate",
+        "brand": "Nike",
+        "price": 4496,
+        "description": "Color : White, Outer Material : Textile, Model Name : Renew Elevate, Ideal For : Men, Occasion : Sports, Closure : Lace-Ups",
+        "image": "assets/images/nikeshoes1.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 7,
+        "productname": "Nike Air Zoom Vomero 15",
+        "brand": "Nike",
+        "price": 10121,
+        "description": "Color : Black, Outer Material : Mesh, Model Name : Air Zoom Vomero 15, Ideal For : Men, Occasion : Sports, Closure : Lace-Ups",
+        "image": "assets/images/nikeshoes2.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 8,
+        "productname": "Puma Zod Runner V3 IDP",
+        "brand": "Puma",
+        "price": 1499,
+        "description": "Color : White, Outer Material : Mesh, Model Name : Zod Runner V3 IDP, Ideal For : Men, Occasion : Sports, Sole Material : Rubber, Closure : Lace-Ups",
+        "image": "assets/images/pumashoes1.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 9,
+        "productname": "Puma Pacer Balance IDP",
+        "brand": "Puma",
+        "price": 1594,
+        "description": "Color : Blue, Outer Material : Mesh, Model Name : Pacer Balance IDP, Ideal For : Men, Occasion : Sports, Sole Material : Rubber, Closure : Lace-Ups",
+        "image": "assets/images/pumashoes2.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 10,
+        "productname": "Adidas Elate M",
+        "brand": "Adidas",
+        "price": 1105,
+        "description": "Color : Blue, Outer Material : Synthetic, Model Name : Elate M, Ideal For : Men, Occasion : Sports, Sole Material : Rubber, Closure : Lace-Ups",
+        "image": "assets/images/adidasshoes.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 11,
+        "productname": "Nike Sweatshirt",
+        "brand": "Nike",
+        "price": 2471,
+        "description": "Color : White & Dark Blue, Fabric : Polyster, Neck : Hooded , Ideal For : Men, Sleeve : Full Sleeve ",
+        "image": "assets/images/nikesweat1.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 12,
+        "productname": "Nike Sweatshirt",
+        "brand": "Nike",
+        "price": 2471,
+        "description": "Color : Blue, Fabric : Polyster, Neck : Hooded , Ideal For : Men, Sleeve : Full Sleeve ",
+        "image": "assets/images/nikesweat2.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 13,
+        "productname": "Jack and Jones Jacket",
+        "brand": "Jack and Jones",
+        "price": 1924,
+        "description": "Color : Green, Fabric : Cotton Blend, Neck : Bomber , Ideal For : Men, Sleeve : Full Sleeve",
+        "image": "assets/images/jjjacket.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 14,
+        "productname": "Adidas Sweatshirt",
+        "brand": "Adidas",
+        "price": 2469,
+        "description": "Color : Black, Fabric : Cotton Blend, Neck : Hooded , Ideal For : Men, Sleeve : Full Sleeve",
+        "image": "assets/images/adidassweat.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 15,
+        "productname": "Adidas Sweatshirt",
+        "brand": "Adidas",
+        "price": 3919,
+        "description": "Color : Black, Fabric : Polyster Blend, Neck : Hooded , Ideal For : Men, Sleeve : Full Sleeve",
+        "image": "assets/images/adidassweat.jpeg",
+        "quantity": 0
+      }
+    ],
+    "electronics": [
+      {
+        "id": 16,
+        "productname": "Apple Macbook Air M1",
+        "brand": "Apple",
+        "price": 92900,
+        "description": "Apple M1 Processor, 8GB DDR4 RAM, Mac OS Operating System, 256GB SSD, 33.78cm (13.3 inch) Display, 1 Year Limited Warranty",
+        "image": "assets/images/macbook1.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 17,
+        "productname": "Apple Macbook Pro M1",
+        "brand": "Apple",
+        "price": 118900,
+        "description": "Apple M1 Processor, 8GB DDR4 RAM, Mac OS Operating System, 256GB SSD, 33.78cm (13.3 inch) Display, 1 Year Limited Warranty",
+        "image": "assets/images/macbook2.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 18,
+        "productname": "Asus ROG Strix",
+        "brand": "Asus",
+        "price": 69990,
+        "description": "NVIDIA GeForce GTX 1650 Ti, Intel Core i5 (10th Gen), 8GB DDR4 RAM, 512GB SSD, 39.62cm (15.5 inch) Display, 1 Year Onsite Warranty",
+        "image": "assets/images/asusrog.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 19,
+        "productname": "Acer Predator Helios 300",
+        "brand": "Acer",
+        "price": 92990,
+        "description": "Intel Core i5 (10th Gen), 16GB DDR4 RAM, 1TB HDD | 256GB SSD, 39.62cm (15.5 inch) Display, 1 Year International Travellers Warranty",
+        "image": "assets/images/acerpred.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 20,
+        "productname": "Lenovo Ideapad",
+        "brand": "Lenovo",
+        "price": 42990,
+        "description": "Lenovo Ideapad S145 Core i5 10th Gen - (8 GB/1 TB HDD/Windows 10 Home) S145-15IIL Laptop  (15.6 inch, Platinum Grey, 1.85 kg)",
+        "image": "assets/images/lenovo.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 21,
+        "productname": "Apple Ipad Pro",
+        "brand": "Apple",
+        "price": 71900,
+        "description": "APPLE iPad Pro 2021 (3rd Generation) 8 GB RAM 128 GB ROM 11 inches with Wi-Fi Only (Space Grey)",
+        "image": "assets/images/ipad.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 22,
+        "productname": "Apple Watch Series 4",
+        "brand": "Apple",
+        "price": 52900,
+        "description": "APPLE Watch Series 4 GPS + Cellular 44 mm Space Grey Aluminium Case with Black Sport Band  (Black Strap, Regular)",
+        "image": "assets/images/iwatch.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 23,
+        "productname": "Samsung Galaxy Buds Pro",
+        "brand": "Samsung",
+        "price": 15990,
+        "description": "SAMSUNG Galaxy Buds Pro Active Noise Cancellation Enabled Bluetooth Headset (Violet, True Wireless)",
+        "image": "assets/images/samsungbuds.jpeg",
+        "quantity": 0
+      }
+    ],
+    "home": [
+      {
+        "id": 24,
+        "productname": "Ikea TV Unit",
+        "brand": "Ikea",
+        "price": 12489,
+        "description": "Desc",
+        "image": "assets/images/home1.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 25,
+        "productname": "Ikea Sofa Set",
+        "brand": "Ikea",
+        "price": 39999,
+        "description": "Desc",
+        "image": "assets/images/home2.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 26,
+        "productname": "Bombay Dyeing Bedsheet",
+        "brand": "Bombay Dyeing",
+        "price": 2519,
+        "description": "Size : Double King, Threadcount : 160TC, Pattern : Floral, Fabric : Cotton",
+        "image": "assets/images/home3.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 27,
+        "productname": "Bombay Dyeing Bedsheet",
+        "brand": "Bombay Dyeing",
+        "price": 3911,
+        "description": "Size : Double King, Threadcount : 160TC, Pattern : Floral, Fabric : Cotton, Color : Dark Brown",
+        "image": "assets/images/home4.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 28,
+        "productname": "Wall Clock",
+        "brand": "ekart",
+        "price": 339,
+        "description": "Lord Ganesh Design Wall Clock",
+        "image": "assets/images/home5.jpeg",
+        "quantity": 0
+      }
+    ],
+    "appliances": [
+      {
+        "id": 29,
+        "productname": "Samsung Crystal 4K",
+        "brand": "Samsung",
+        "price": 39999,
+        "description": "Size : 108cm (43 inch), Operating System: Tizen, Resolution: Ultra HD (4K) 3840 x 2160 Pixels, Sound Output: 20 W, Refresh Rate: 60 Hz",
+        "image": "assets/images/appliances1.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 30,
+        "productname": "Motorola TV",
+        "brand": "Motorola",
+        "price": 17999,
+        "description": "Size : 80cm (32 inch), Operating System: Android, Resolution: HD Ready 1366 x 768 Pixels, Sound Output: 40 W, Refresh Rate: 60 Hz",
+        "image": "assets/images/appliances2.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 31,
+        "productname": "Samsung Fully Washing Machine",
+        "brand": "Samsung",
+        "price": 14690,
+        "description": "Fully Automatic Top Load Washing Machines provide great wash quality 680 rpm : Higher the spin speed, lower the drying time, 6.5 kg",
+        "image": "assets/images/appliances3.jpeg",
+        "quantity": 0
+      },
+      {
+        "id": 32,
+        "productname": "LG Fully Washing Machine",
+        "brand": "LG",
+        "price": 16490,
+        "description": "LG 5 Star Invertor Fully Automatic Top Load Washing Machine, 780 rpm : Higher the spin speed, lower the drying time, 5 Star Rating, 6.5 kg",
+        "image": "assets/images/appliances4.jpeg",
+        "quantity": 0
+      }
+    ]
+  }
+}
