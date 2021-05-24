@@ -23,6 +23,7 @@ export class HomedashComponent implements OnInit {
 
   gotologout() {
     this.router.navigateByUrl('login');
+    localStorage.clear();
   }
 
   gotoproducts() {
