@@ -26,61 +26,34 @@
                 </ul>
               </div>
         </div>
-
-
-        <div  class="maincart">
-          <h1>Your Shopping Cart</h1>
-            <div id="shoppingcart">
-              <div *ngFor="let item of usercart, let i=index">
-                <div class="item">
-                    <img src="{{item.image}}" height="120px" width="100px">
-                    <h3>{{item.productname}}</h3>
-                    <h4>₹{{item.price}}</h4>
-                    <h4>{{item.description}}</h4>
-                    <h4>{{item.quantity}}</h4>
-                  <hr>
-                </div>
-              </div>
-            </div>
-         <button class="btn btn-dark btn-lg">Proceed to pay</button>
+      
+        <div class="item">
+        <h1>Your Shopping Cart</h1>
+          <div class="tablebox">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Product Image</th>
+                  <th scope="col">Product Name</th>
+                  <th scope="col">Product Price</th>
+                  <th scope="col">Product Description</th>
+                  <th scope="col">Product Quantity</th>
+              </tr>
+             </thead>
+             <tbody *ngFor="let item of usercart, let i=index">
+              <tr>
+                <td><img src="{{item.image}}" height="120px" width="100px"></td>
+                <td>{{item.productname}}</td>
+                <td>₹{{item.price}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.quantity}}</td>
+              </tr>
+             </tbody>
+            </table>
+            <button class="btn btn-danger">Total Payable Amount : ₹{{this.total}}</button>
           </div>
-    </div>
-
-    <!-- <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Product Image</th>
-          <th scope="col">Product Name</th>
-          <th scope="col">Product Price</th>
-          <th scope="col">Product Quantity</th>
-          <th scope="col">Product Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td><img src="{{item.image}}" height="120px" width="100px"></td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>{{item.name}}</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td >{{item.price}}</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td >{{item.quantity}}</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>{{item.description}}</td>
-        </tr>
-      </tbody>
-    </table> -->
-
+        </div>
+      </div>
     <footer class="flex-center">
         <p>Copyright &copy; eKart.com</p>
     </footer>
