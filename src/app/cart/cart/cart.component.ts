@@ -11,7 +11,7 @@ export class CartComponent implements OnInit {
 
   logo = "assets/images/ekart_logo.png";
   public auser: any;
-  public total: any;
+  public total = 0;
   public cart: any;
   public ucart: any;
   public usercart = [];
@@ -33,6 +33,9 @@ export class CartComponent implements OnInit {
         if(element.id == obj.id){
           this.usercart=element.cart;
           console.log(this.usercart);
+          this.usercart.forEach(element =>{
+            this.total += element.quantity*element.price;
+          })
         }
     })
   })
@@ -40,6 +43,7 @@ export class CartComponent implements OnInit {
 
   gotologout() {
     this.router.navigateByUrl('login');
+    localStorage.clear();
   }
 
   gotoproducts() {
