@@ -116,6 +116,7 @@ export class ProductsdashComponent implements OnInit {
 
   gotologout() {
     this.router.navigateByUrl('login');
+    localStorage.clear();
   }
 
   gotohome() {
