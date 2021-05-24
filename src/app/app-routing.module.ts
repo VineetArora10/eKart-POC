@@ -5,6 +5,7 @@ import { HomedashComponent } from './home/homedash/homedash.component';
 import { ProductsdashComponent } from './products/productsdash/productsdash.component';
 import { LoginComponent } from './users/login/login.component';
 import { RegisterComponent } from './users/register/register.component';
+import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
   {
@@ -13,11 +14,11 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomedashComponent
+    component: HomedashComponent, canActivate: [AuthGuard]
   },
   {
     path: 'products',
-    component: ProductsdashComponent
+    component: ProductsdashComponent, canActivate: [AuthGuard]
   },
   {
     path: 'login',
@@ -29,7 +30,7 @@ const routes: Routes = [
   },
   {
     path: 'cart',
-    component: CartComponent
+    component: CartComponent, canActivate: [AuthGuard]
   }
 ];
 
