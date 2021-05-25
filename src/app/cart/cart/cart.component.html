@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-</head>
-<body>
-    <nav>
-        <div class="logo">
-          <img [src]="logo" height="60px" width="60px">
-        </div>
-    </nav>
 
-    <div class="container">
-        <div class="sidebox">
-            <div class="sidebar">
-                <ul>
-                    <li><button class="btn sidebtn">Profile</button></li>
-                    <li><button class="btn sidebtn" (click)="gotohome()">Home</button></li>
-                    <li><button class="btn sidebtn" (click)="gotoproducts()">Products</button></li>
-                    <li><button class="btn sidebtn">About Us</button></li>
-                    <li><button class="btn sidebtn">Contact Us</button></li>
-                    <li><button class="btn sidebtn" (click)="gotologout()">Logout</button></li>
-                </ul>
-              </div>
-        </div>
-      
-        <div class="item">
-        <h1>Your Shopping Cart</h1>
-          <div class="tablebox">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Product Image</th>
-                  <th scope="col">Product Name</th>
-                  <th scope="col">Product Price</th>
-                  <th scope="col">Product Description</th>
-                  <th scope="col">Product Quantity</th>
-              </tr>
-             </thead>
-             <tbody *ngFor="let item of usercart, let i=index">
-              <tr>
-                <td><img src="{{item.image}}" height="120px" width="100px"></td>
-                <td>{{item.productname}}</td>
-                <td>₹{{item.price}}</td>
-                <td>{{item.description}}</td>
-                <td>{{item.quantity}}</td>
-              </tr>
-             </tbody>
-            </table>
-            <button class="btn btn-danger">Total Payable Amount : ₹{{this.total}}</button>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img [src]="logo" height="60px" width="60px">
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="sidebox">
+      <div class="sidebar">
+        <ul>
+          <li><button class="btn sidebtn">Profile</button></li>
+          <li><button class="btn sidebtn" (click)="gotohome()">Home</button></li>
+          <li><button class="btn sidebtn" (click)="gotoproducts()">Products</button></li>
+          <li><button class="btn sidebtn">About Us</button></li>
+          <li><button class="btn sidebtn">Contact Us</button></li>
+          <li><button class="btn sidebtn" (click)="gotologout()">Logout</button></li>
+        </ul>
       </div>
-    <footer class="flex-center">
-        <p>Copyright &copy; eKart.com</p>
-    </footer>
+    </div>
+
+    <div class="item">
+      <h1>Your Shopping Cart</h1>
+    <div class="tablebox">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Product Image</th>
+          <th scope="col">Product Name</th>
+          <th scope="col">Product Price</th>
+          <th scope="col">Product Description</th>
+          <th scope="col">Product Quantity</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of usercart, let i=index">
+        <tr>
+          <td><img src="{{item.image}}" height="120px" width="100px"></td>
+          <td>{{item.productname}}</td>
+          <td>{{item.price | currency : 'INR'}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.quantity}}
+            <button class="btn btn-success addbtn" (click)="add(i)">+</button>
+            <button class="btn btn-danger rembtn" (click)="remove(i)">-</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-danger amountbtn" (click)="pay()">Total Payable Amount : {{this.total | currency:'INR'}}</button>
+    </div>
+    </div>
+  </div>
+
+<div class="box2 flex-center">
+    <form class="contact-form" (ngSubmit)="sendEmail($event)">
+        <input [hidden]="true" type="text" name="user_name" [(ngModel)]="name">
+        <input [hidden]="true" type="email" name="user_email" [(ngModel)]="email">
+        <textarea [hidden]="true" name="message" [(ngModel)]="message"></textarea>
+        <button *ngIf="clicked" (click)="checkout()" type="submit" class="btn btn-success checkbtn">Proceed to Checkout</button>
+    </form>
+</div>
+
+  <footer class="flex-center">
+    <p>Copyright &copy; eKart.com</p>
+  </footer>
 </body>
 </html>
